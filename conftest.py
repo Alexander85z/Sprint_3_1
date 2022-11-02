@@ -62,7 +62,7 @@ def registration():
     registration.quit()
 
 @pytest.fixture
-def signin():
+def signin(driver):
 # ввести данные авторизации
     driver.find_element(By.XPATH, ".//body/div[@id='root']/div[1]/main[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]").send_keys(
         'trewq123@mail.ru')
